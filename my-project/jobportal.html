@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Job-Portal</title>
+    <style>
+        /* Add custom background image style */
+        .bg-custom {
+            background-image: url('https://www.jobsineducation.net/_next/image?url=https%3A%2F%2Fd245heba5s672v.cloudfront.net%2Fblog6ac0f%2F4b0c6c5fa0ab7ad46859da0772ceb779.jpg&w=1920&q=75');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Overlay with reduced opacity */
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.2); /* White overlay with 60% opacity */
+            z-index: 0;
+        }
+
+        /* Ensure content is above the overlay */
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-custom">
+    <!-- Overlay layer -->
+    <div class="bg-overlay"></div>
+
+    <!-- Content section -->
+    <div class="content flex space-x-4">
+        <button
+            type="button"
+            class="inline-flex items-center rounded-xl mr-3
+            bg-white px-16 py-6 text-xl font-bold text-black hover:bg-black/80"
+        >
+            Search Job
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ml-2 h-4 w-4"
+            >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </button>
+        <button
+        class="inline-flex items-center rounded-xl ml-3
+        bg-black px-16 py-6 text-xl font-bold text-white hover:bg-black/80"
+        >
+            Post Job
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ml-2 h-4 w-4"
+            >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </button>
+    </div>
+</body>
+</html>

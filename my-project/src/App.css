@@ -1,0 +1,18 @@
+body {
+  background: url('https://www.addressguru.in/images/1624955481.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative; /* Ensure elements stack correctly */
+}
+
+.fixed {
+  z-index: 50; /* Navbar stays on top */
+}

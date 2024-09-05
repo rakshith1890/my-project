@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  background: url('https://www.addressguru.in/images/1624955481.png') no-repeat center center fixed;
+  /* background: url('https://content.jdmagicbox.com/v2/comp/rangareddy/i9/040pxx40.xx40.140629164625.a2i9/catalogue/vignana-bharathi-institute-of-technology-ghatkesar-rangareddy-colleges-rhmw6b.jpg') no-repeat center center fixed; */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button-login {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-signup {
+  background-color: #28a745;
+  color: white;
+}
+
+.button-login:hover {
+  background-color: #0056b3;
+}
+
+.button-signup:hover {
+  background-color: #218838;
+}
