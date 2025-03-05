@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Slider = () => {
   const images = [
@@ -6,7 +6,7 @@ const Slider = () => {
     "https://content.jdmagicbox.com/v2/comp/rangareddy/i9/040pxx40.xx40.140629164625.a2i9/catalogue/vignana-bharathi-institute-of-technology-ghatkesar-rangareddy-colleges-rhmw6b.jpg",
     "https://vbithyd.ac.in/wp-content/uploads/2014/12/Alumni-Association-2k13-@-VBIT-2.jpg",
     "https://vbithyd.ac.in/wp-content/uploads/2016/05/Association-of-Lady-Entrepreneurs-of-India-ALEAP-1.jpg",
-    "https://vbithyd.ac.in/wp-content/uploads/2020/12/vbit-srudent-at-amity.jpg"
+    "https://vbithyd.ac.in/wp-content/uploads/2021/12/2-11.jpg"
   ];
 
   const [counter, setCounter] = useState(0);
