@@ -1,46 +1,10 @@
-const mongoose = require('mongoose');
-// Signup Schema
+const mongoose = require("mongoose");
+
 const userSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-    }
+    name: { type: String, required: true },  // Ensure name is part of schema
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true }
 });
 
-// Feedback Schema
-// const feedbackSchema = new mongoose.Schema({
-//     firstName: {
-//         type: String,
-//         required: true
-//     },
-//     lastName: {
-//         type: String,
-//         required: true
-//     },
-//     email: {
-//         type: String,
-//         required: true
-//     },
-//     phoneNumber: {
-//         type: String,
-//         required: true
-//     },
-//     message: {
-//         type: String,
-//         required: true
-//     },
-//     createdAt: {
-//         type: Date,
-//         default: Date.now
-//     }
-// });
-
-// Create models from schemas
-const User =new mongoose.model('User', userSchema);
-// const Feedback = mongoose.model('Feedback', feedbackSchema);
-
+const User = mongoose.model("User", userSchema);
 module.exports = User;

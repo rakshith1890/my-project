@@ -1,5 +1,5 @@
 
-function Leaning() {
+function Learning() {
 
     return(
         <>
@@ -55,4 +55,4 @@ function Leaning() {
         </>
     )
 }
-export default Leaning
+export default Learning

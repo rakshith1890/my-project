@@ -25,6 +25,9 @@ function Login() {
                 else if(res.data==="notexist"){
                     alert("User have not sign up")
                 }
+                else if (res.data === "invalid_password") {
+                  alert("Incorrect password. Please try again.");
+              }
             })
             .catch(e=>{
                 alert("wrong details")
@@ -64,7 +67,7 @@ function Login() {
                   <div className="flex items-center justify-between"> 
                   <label className="text-base font-medium text-gray-900 ">
                   Email address
-                </label>
+                  </label>
                   </div>
                 <div className="mt-2">
                 <input
