@@ -9,6 +9,8 @@ import Job from './Job';
 import Learning from './Learning';
 import Newsletter from './Newsletter';
 import Stories from './Stories';
+import Chat from "./Chat";
+// import Users from './Users';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -19,6 +21,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        {/* <Route path="/users" element={<Users />} /> */}
+        <Route path="/chat/:receiverId" element={<Chat />} />
         <Route path="/alumniactivities" element={<AlumniActivities />}/>
         <Route path="/stories" element={<Stories />}/>
         <Route path="/newsletter" element={<Newsletter />}/>
@@ -27,7 +31,7 @@ function App() {
         <Route path="/job" element={<Job />}/>
         <Route path="/learning" element={<Learning />}/>
         <Route path="/signup" element={<Signup/>}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<Login/>}/>   
       </Routes>
     </Router>
 
